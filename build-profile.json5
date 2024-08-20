@@ -1,0 +1,49 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/anhui/.ohos/config/default_alipay_harmony_sdk_TPePk7MZcJjZR_LEEbUXfFCg5gRpDne36RjG7Si6rlk=.cer",
+          "storePassword": "0000001BBDFC87664009E24547F6ADA1C79C25965ADD83FB077A4C76652A69289CA27CC33B77FB48F32B0E",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B6AA96EC262FEFDEC3A759B0AC4EB9D337EADF776ECEDD97CCEDA482A37AC70279B5BE38462E660",
+          "profile": "/Users/anhui/.ohos/config/default_alipay_harmony_sdk_TPePk7MZcJjZR_LEEbUXfFCg5gRpDne36RjG7Si6rlk=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/anhui/.ohos/config/default_alipay_harmony_sdk_TPePk7MZcJjZR_LEEbUXfFCg5gRpDne36RjG7Si6rlk=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
