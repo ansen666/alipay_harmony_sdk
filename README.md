@@ -1,3 +1,7 @@
+**效果图**
+
+![image](https://github.com/ansen666/alipay_harmony_sdk/blob/main/jietu.gif?raw=true)
+
 App适配鸿蒙Next，开始做支付功能了，目前来说只有支付宝支持鸿蒙Next，微信还没上架，但是支付宝官方的文档跟Demo都很老，下载官方的Demo用最新版的DevEco-Studio导入都不成功。
 
 后面在OpenHarmony三方库中心仓找到了最新的代码：
@@ -41,10 +45,6 @@ OrderInfoUtil.getOrderInfo(obj).then(orderInfo=>{
     });
 })
 ```
-
-**效果图**
-
-![image](https://github.com/ansen666/alipay_harmony_sdk/blob/main/jietu.gif?raw=true)
 
 ### 注意事项
 官方的Demo是没有notify_url这个参数的，但是我发现不加上notify_url的话，支付成功不会回调我们的业务服务器，于是我对比安卓的代码给加上的，还有notify_url必须要加在method参数后面，因为计算签名的时候参数key是需要排序的。
